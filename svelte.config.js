@@ -6,13 +6,15 @@ const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-
 	kit: {
+
 		adapter: adapter({
-			fallback: '200.html'
+			fallback: 'index.html'
 		}),
-		prerender: { entries: [] }
-	}
+		prerender: { entries: [] },
+
+	},
+
 };
 
 export default config;
